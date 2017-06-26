@@ -1,0 +1,72 @@
+<html>
+
+<head>
+
+
+  <!-- CSS not necessary in codepen
+  <link rel="stylesheet" href="style.css">
+-->
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display+SC|Shrikhand" rel="stylesheet">
+
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+
+  <!-- JS not necessary in codepen
+  <script type="text/javascript" src="main.js"></script>
+-->
+
+  <!-- Font Awesome CDN -->
+  <script src="https://use.fontawesome.com/8bd0bb916b.js"></script>
+
+  <meta charset="utf-8">
+
+
+  <title>Wikipedia Viewer</title>
+</head>
+
+<body>
+
+
+  <div class="container">
+
+    <form action="" target="_blank">
+      <p>Hello Wikipedia.</p>
+      <label for="searchString">I want to read about...</label><br>
+
+
+      <input type="text" id="searchString" autofocus autocomplete="off" onfocus="this.placeholder=''" onblur="this.placeholder='Enter text here'" required>
+
+
+      <div>
+
+        <button type="submit" name="new" class="buttons"><i class="fa fa-search" aria-hidden="true"> </i></button>
+
+        <button type="button" name="new" class="buttons" id="new">Clear</i></button>
+
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank"><button class="buttons" type="button" name="random"><i class="fa fa-random" aria-hidden="true"></i></button></a>
+      </div>
+
+
+      <img src="https://upload.wikimedia.org/wikipedia/commons/7/77/Wikipedia_svg_logo.svg" alt="wikipedia logo">
+
+
+    </form>
+
+
+    <div id="results">
+
+
+    </div>
+
+  </div>
+
+
+  <footer class="text-center">&copy;GML 2017 | Powered by Wikipedia API |<a href="https://www.freecodecamp.com/gml133f" style="margin-left: 5px" target="_blank">FCC <i class="fa fa-free-code-camp"></i></a>
+  </footer>
+
+</body>
+
+</html>
